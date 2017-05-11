@@ -39,3 +39,4 @@
   background:repeating-linear-gradient(-45deg,rgba(0,0,0,.1),rgba(0,0,0,.1) 5px,rgba(0,0,0,.2) 5px,rgba(0,0,0,.2) 10px);
   background-position:50% 50%;
 }
+.text-editor-content {font-family:"Roboto Mono","Courier New",Courier,"Nimbus Mono L",monospace}
