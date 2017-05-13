@@ -40,3 +40,20 @@
   background-position:50% 50%;
 }
 .text-editor-content {font-family:"Roboto Mono","Courier New",Courier,"Nimbus Mono L",monospace}
+input.text-editor-input,
+select.text-editor-select,
+textarea.text-editor-textarea {box-shadow:inset 0 1px 2px rgba(0,0,0,.25)}
+a.text-editor-button,
+button.text-editor-button {box-shadow:0 1px 2px rgba(0,0,0,.25)}
+.text-editor-tool a.text-editor-button,
+.text-editor-tool button.text-editor-button {box-shadow:none}
+select.text-editor-select {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAGAQMAAAA1wBY1AAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAABRJREFUCNdjaGI4xvCOoYbBgkEAABY+Avv4eJ89AAAAAElFTkSuQmCC');
+  background-repeat:no-repeat;
+  background-position:100% 50%;
+  background-position:calc(100% - .5em) 50%;
+  padding-right:1.5em;
+}
