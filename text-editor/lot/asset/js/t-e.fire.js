@@ -9,7 +9,7 @@
     config = $.TE || {};
     config.languages = $.languages.$.TE || {};
     lot = forms.$;
-    CM = forms.CM;
+    CM = forms.CM || {};
 
     function preview($, panel) {
         /*
@@ -50,4 +50,4 @@
 
     forms.TE = editors;
 
-})(Panel);
+})(window.PANEL);

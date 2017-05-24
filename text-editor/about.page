@@ -3,12 +3,14 @@ title: Text Editor
 description: A text selection range API written in pure JavaScript, for modern browsers.
 author: Taufik Nurrohman
 type: Markdown
-version: 0.0.10
+version: 0.1.0
 ...
 
 This is the official text editor extension for Mecha.
 
-Original project: <https://tovic.github.io/text-editor>
+Go to the site’s state editor then change the value of _Editor_ field in the _Site › Page_ group with _Text Editor_.
+
+**Project:** <https://tovic.github.io/text-editor>
 
 ### Dependency
 
