@@ -1,17 +1,21 @@
 <?php
 
 Hook::set('shield.before', function() {
-    $__f = __DIR__ . DS . 'lot' . DS . 'asset' . DS . 'js' . DS . 't-e' . DS . 'ui' . DS;
-    if ($__s = Lot::get('__page')) {
-        Asset::set($__f . 'h-t-m-l.min.js', 20.2);
-        $__s = !empty($__s[0]) ? __c2f__($__s[0]->type) : false;
-        if ($__s) {
-            Asset::set($__f . $__s . '.min.js', 20.3);
+    $__id = Path::B(__DIR__);
+    $__state = Config::get('page.editor', "");
+    if ($__state === $__id) {
+        $__f = __DIR__ . DS . 'lot' . DS . 'asset' . DS . 'js' . DS . 't-e' . DS . 'ui' . DS;
+        if ($__s = Lot::get('__page')) {
+            Asset::set($__f . 'h-t-m-l.min.js', 20.2);
+            $__s = !empty($__s[0]) ? __c2f__($__s[0]->type) : false;
+            if ($__s) {
+                Asset::set($__f . $__s . '.min.js', 20.3);
+            }
         }
-    }
-    $__extend = Extend::state(__DIR__, 'TE')['extend'];
-    foreach ($__extend as $__k => $__v) {
-        Asset::set($__f . 'ui' . DS . $__k . '.min.js', 20.5);
+        $__extend = Extend::state(__DIR__, 'TE')['extend'];
+        foreach ($__extend as $__k => $__v) {
+            Asset::set($__f . 'ui' . DS . $__k . '.min.js', 20.5);
+        }
     }
 });
 
@@ -38,7 +42,6 @@ Hook::set('panel.js', function($__content) {
 Hook::set('on.panel.ready', function() {
     $__id = Path::B(__DIR__);
     $__state = Config::get('page.editor', "");
-    Config::set('panel.f.page.editors.' . $__id, 'Text Editor');
     if ($__state === $__id) {
         $__ff = __DIR__ . DS . 'lot' . DS . 'asset' . DS;
         $__f = $__ff . 'css' . DS . 't-e' . DS;
