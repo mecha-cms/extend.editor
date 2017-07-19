@@ -8,7 +8,7 @@ version: 0.1.0
 
 This is the official text editor extension for Mecha.
 
-Go to the site’s state editor then change the value of _Editor_ field in the _Site › Page_ group with _Text Editor_.
+Go to the site’s state editor then change the value of _Editor_ field in the _Common_ tab with _Text Editor_.
 
 **Project:** <https://tovic.github.io/text-editor>
 
