@@ -1,6 +1,6 @@
 <?php
 
-Hook::set('shield.before', function() {
+Hook::set('route.enter', function() {
     $__id = Path::B(__DIR__);
     $__state = Config::get('page.editor', "");
     if ($__state === $__id) {
