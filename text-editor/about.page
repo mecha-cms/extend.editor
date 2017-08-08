@@ -4,6 +4,7 @@ description: A text selection range API written in pure JavaScript, for modern b
 author: Taufik Nurrohman
 type: Markdown
 version: 0.1.0
+dependency: {"extension":["panel"]}
 ...
 
 This is the official text editor extension for Mecha.
@@ -11,11 +12,5 @@ This is the official text editor extension for Mecha.
 Go to the site’s state editor then change the value of _Editor_ field in the _Common_ tab with _Text Editor_.
 
 **Project:** <https://tovic.github.io/text-editor>
-
-### Dependency
-
-#### Extension
-
- - Panel
 
 <!-- block:donate -->
