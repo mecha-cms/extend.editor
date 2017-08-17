@@ -1,15 +1,15 @@
 (function($) {
 
-    var forms = $.forms,
+    if (!$) return;
+
+    var form = $.__form__,
         editors = {},
         config, lot, CM, i, j, k, l, m;
 
-    if (!forms) return;
-
-    config = $.TE || {};
-    config.languages = $.languages.$.TE || {};
-    lot = forms.$;
-    CM = forms.CM || {};
+    config = $config.TE || {};
+    config.languages = $language.TE || {};
+    lot = form.$;
+    CM = form.CM || {};
 
     function preview($, panel) {
         /*
@@ -48,6 +48,6 @@
         }
     }
 
-    forms.TE = editors;
+    form.TE = editors;
 
 })(window.PANEL);

@@ -1,6 +1,6 @@
 <?php
 
-Hook::set('route.enter', function() {
+Hook::set('shield.enter', function() {
     $__id = Path::B(__DIR__);
     $__state = Config::get('page.editor', "");
     if ($__state === $__id) {
@@ -34,7 +34,7 @@ Hook::set('panel.js', function($__content) {
         foreach ($__ui as $__k => $__v) {
             $__ui[$__k] = array_replace_recursive($__v, $__a);
         }
-        return $__content . '!function($){$.TE=' . json_encode($__ui) . '}(window.PANEL);';
+        return $__content . '!function($){$.TE=' . json_encode($__ui) . '}(window.$config);';
     }
     return $__content;
 });
